@@ -1,0 +1,74 @@
+body{  /*定义网页窗口属性，清除页边距，定义居中显示*/
+    padding: 0px;
+    margin: 0px auto;
+    min-height: 100%;
+    width: 100%;
+    font: 14px "Helvetica Neue","微软雅黑"，“Microsoft Yahei”,Helvetica,Arial,sans-serif;
+    color: black;
+}
+li{list-style:none;去掉列表前面图形}
+h1,h2,h3,h4,h5,h6,p,dl,ol,ul,pre{margin-top: 20px;margin-bottom: 20px;}
+a,img,h2{text-decoration: none;border: none;}
+a{color: saddlebrown;}
+h2{color:gray;}
+a:hover{text-decoration: underline;}
+#wrap{  /*固定宽度，并居中显示*/
+    width: 1536px;
+    margin: 0px auto;
+}
+#header{
+    width: 100%;  /*与父元素同宽*/
+    height: 120px;  /*定义固定高度*/
+    background-color: #A94E38;  /*定义背景颜色*/
+}
+#header_l{
+    width: 80%;  /*与父元素同宽*/
+    height: 100%;  /*定义固定高度*/
+    color: papayawhip;  /*定义文字颜色*/
+    font:italic bold 35px/110px sans-serif;/*倾斜 加粗 字号/行高 字体*/
+}
+#header_r{
+    width: 20%;  /*与父元素同宽*/
+    height: 100%;  /*定义固定高度*/
+    color: papayawhip;  /*定义文字颜色*/
+    font:italic bold 10px/30px sans-serif;/*倾斜 加粗 字号/行高 字体*/
+}
+#main{
+    width: 100%;
+    height: 570px;
+}
+#bar_l{  /*定义左栏样式*/
+    width: 250px;
+    height: 100%;
+    float: left;  /*浮动显示，可以实现并列分布*/
+    background-color: white;
+    color: gray;
+    overflow: hidden;  /*隐藏超出区域的内容*/
+}
+#bar_r{  /*定义右栏样式*/
+    width: 250px;
+    height: 100%;
+    float: left;  /*浮动显示，可以实现并列分布*/
+    background-color: white;
+    color: gray;
+    overflow: hidden;  /*隐藏超出区域的内容*/
+    font:italic bold 10px/30px sans-serif;/*倾斜 加粗 字号/行高 字体*/
+    text-align: center;
+}
+#content{  /*定义中间内容区域的样式*/
+    width: 1036px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background-color: #fff;
+}
+#footer{  /*定义页脚样式*/
+    background-color: #7082C2;
+    width: 100%;
+    height: 31px;
+    clear: both;  /*清除左右浮动的元素*/
+    text-align: center;
+    font:italic bold 10px/30px sans-serif;/*倾斜 加粗 字号/行高 字体*/
+}
+#menu ul{display:none;设置二级菜单默认不显示}
+#menu>li:hover ul{display:table-footer-group;鼠标滑过一级菜单时，显示二级菜单}
